@@ -939,6 +939,7 @@
                     if (checkBufferZone(clickCoords, station.coordinates, bufferRadius)) {
                         removeRoutes();
                         getRoute(chargingStations.indexOf(station) + 1);
+                        
 
                         // Clear the relevant info box before updating it
                         const currentBoxId = chargingStations.indexOf(station) + 1 === 1 ? 'top-right-info' : 'bottom-left-info';
